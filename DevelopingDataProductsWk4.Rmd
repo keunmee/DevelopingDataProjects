@@ -1,0 +1,63 @@
+---
+title: "Developing Data Products Wk4 PJ - Shiny App"
+author: "Ellie Kim"
+date: '2018-05-24'
+output: slidy_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+## Project Objectives :
+* To create a Shiny Application : 
+1. Create a shiny application with associated supporting documentation   
+2. Need to include some widgets, operations on the ui.R and server.R  
+3. Some reactive output displayed as a result of server calculations  
+4. Deploy the application on Rstudio's shiny server  
+
+* To create a R Presentation : 
+1. 5 slides to pitch the idea done in Slidify or Rstudio Presenter  
+2. Need to be pushed to github or Rpubs
+3. Need to contain some embedded R code that gets run when slidifying the document
+
+## The Shiny Application includes
+
+Left Pane  
+- textInput :Input your name  
+- selectInput : Select swiss column X for modeling and plot  
+- selectInput : Select swiss column Y for modeling and plot  
+- checkboxInput : Tick checkboxs for X axis ,Y axis, and main title label  
+- radiobuttons : Select radiobutton for plot image file download  
+
+
+
+Main Pane  
+Four tabs in main panel as below :  
+- Data : Displays swiss data observations  
+- Summary : Displays summary for the swiss data  
+- Modeling : Displays linear modeling for the data as per user selection  
+- Plot : Displays plot, regression line and loess line for corresponding data  
+
+## Slide with R Output
+
+```{r echo = FALSE}
+
+knitr::include_graphics("./Data/ShinyApp.png")
+
+```
+
+## Slide with Plot
+
+```{r echo = FALSE}
+
+knitr::include_graphics("./Data/swiss1.png")
+
+```
+
+The Shiny App is avaialbe at shinyapps.io
+https://efractals.shinyapps.io/Wk4Project/  
+The files are available at Github repository https://github.com/keunmee/DevelopingDataProjects   
+  
+Thank you for reviewing!  
